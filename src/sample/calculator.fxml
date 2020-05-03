@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: #7d6f6e;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CalculatorController">
+   <children>
+      <HBox alignment="CENTER">
+         <children>
+            <Label text="calculatecho™" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER">
+         <children>
+            <TextField fx:id="textField" prefHeight="50.0" prefWidth="180.0" style="-fx-background-radius: 6px; -fx-background-color: #7d6f6e; -fx-border-color: #d9928d; -fx-border-radius: 6px; -fx-border-width: 3px;">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </TextField>
+            <Button fx:id="C" mnemonicParsing="false" onAction="#C" prefHeight="49.0" prefWidth="50.0" style="-fx-background-radius: 6px; -fx-background-color: #d9928d;" text="C">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin></Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER">
+         <children>
+            <Label fx:id="message" textFill="#ff1100" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER">
+         <children>
+            <Button fx:id="one" mnemonicParsing="false" onAction="#one" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 5em; -fx-background-color: #d9928d;" text="1">
+               <HBox.margin>
+                  <Insets bottom="5.0" right="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="two" mnemonicParsing="false" onAction="#two" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 5em; -fx-background-color: #d9928d;" text="2">
+               <HBox.margin>
+                  <Insets bottom="5.0" right="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="three" mnemonicParsing="false" onAction="#three" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 5em; -fx-background-color: #d9928d;" text="3">
+               <HBox.margin>
+                  <Insets bottom="5.0" right="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="divide" mnemonicParsing="false" onAction="#divide" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 5em; -fx-background-color: #ff1100;" text="/" textFill="WHITE">
+               <HBox.margin>
+                  <Insets bottom="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER">
+         <children>
+            <Button fx:id="four" mnemonicParsing="false" onAction="#four" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 5em; -fx-background-color: #d9928d;" text="4">
+               <HBox.margin>
+                  <Insets bottom="5.0" right="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="five" mnemonicParsing="false" onAction="#five" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 5em; -fx-background-color: #d9928d;" text="5">
+               <HBox.margin>
+                  <Insets bottom="5.0" right="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="six" mnemonicParsing="false" onAction="#six" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 5em; -fx-background-color: #d9928d;" text="6">
+               <HBox.margin>
+                  <Insets bottom="5.0" right="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="multiply" mnemonicParsing="false" onAction="#multiply" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 5em; -fx-background-color: #ff1100;" text="x" textFill="WHITE">
+               <HBox.margin>
+                  <Insets bottom="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER">
+         <children>
+            <Button fx:id="seven" mnemonicParsing="false" onAction="#seven" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 5em; -fx-background-color: #d9928d;" text="7">
+               <HBox.margin>
+                  <Insets bottom="5.0" right="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="eight" mnemonicParsing="false" onAction="#eight" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 5em; -fx-background-color: #d9928d;" text="8">
+               <HBox.margin>
+                  <Insets bottom="5.0" right="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="nine" mnemonicParsing="false" onAction="#nine" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 5em; -fx-background-color: #d9928d;" text="9">
+               <HBox.margin>
+                  <Insets bottom="5.0" right="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="minus" mnemonicParsing="false" onAction="#minus" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 5em; -fx-background-color: #ff1100;" text="-" textFill="WHITE">
+               <HBox.margin>
+                  <Insets bottom="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER">
+         <children>
+            <Button fx:id="equalsSign" mnemonicParsing="false" onAction="#equalsSign" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 5em; -fx-background-color: #d9928d;" text="=">
+               <HBox.margin>
+                  <Insets bottom="10.0" right="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="zero" mnemonicParsing="false" onAction="#zero" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 5em; -fx-background-color: #d9928d;" text="0">
+               <HBox.margin>
+                  <Insets bottom="10.0" right="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="dot" mnemonicParsing="false" onAction="#dot" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 5em; -fx-background-color: #d9928d;" text=".">
+               <HBox.margin>
+                  <Insets bottom="10.0" right="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="plus" mnemonicParsing="false" onAction="#plus" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 5em; -fx-background-color: #ff1100;" text="+" textFill="WHITE">
+               <HBox.margin>
+                  <Insets bottom="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>
